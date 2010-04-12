@@ -1,6 +1,7 @@
 
 <h2>Last 10 Pastes</h2>
 <? $used = array(); ?>
+<? if(count($vars)): ?>
 <? foreach($vars as $paste): ?>
 
 <? if(!in_array($paste['type'], $used)): ?>
@@ -17,3 +18,4 @@
 
 <? $used[] = $paste['type']; ?>
 <? endforeach; ?>
+<? endif; ?>
