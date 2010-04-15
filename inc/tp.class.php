@@ -18,9 +18,8 @@ class toothPaste {
 
 		if($private == 'on')
 			$private = 1;
-		
-		if(!$private)
-			$private = 0;
+		else
+			$private = 0;	
 		
 		if($error) {
 			foreach($error as $err)
@@ -32,7 +31,7 @@ class toothPaste {
 			else
 				$key = '';
 		
-			$this->db->query('INSERT INTO `tp_pastes` SET pasteSource = "' .$this->db->escape($source). '", pasteType = "' .$this->db->escape($type). '", pasteKey = "' .$this->db->escape($key). '", pastePrivate = '. $private. ', pasteIP = "' .$this->db->escape($ip). '", pasteDate = ' .time());
+			$this->db->query('INSERT INTO `tp_pastes` SET pasteSource = "' .$this->db->escape($source). '", pasteType = "' .$this->db->escape($type). '", pasteKey = "' .$this->db->escape($key). '", pastePrivate = '. (int) $private. ', pasteIP = "' .$this->db->escape($ip). '", pasteDate = ' .time());
 			$pasteID = $this->db->insertID();
 			
 			if($private)
@@ -71,9 +70,9 @@ class toothPaste {
 	
 	public function getPastes($limit = 10, $query = '') {
 		if(!empty($query)) 
-			$this->db2->query('SELECT * FROM `tp_pastes` WHERE pastePrivate = 0 AND pasteSource LIKE "%' .$this->db2->escape($query). '%" ORDER BY pasteDate DESC LIMIT ' .$limit);
+			$this->db2->query('SELECT * FROM `tp_pastes` WHERE pastePrivate = 0 AND pasteSource LIKE "%' .$this->db2->escape($query). '%" ORDER BY pasteDate DESC LIMIT ' . (int) $limit);
 		else 
-			$this->db2->query('SELECT * FROM `tp_pastes` WHERE pastePrivate = 0 ORDER BY pasteDate DESC LIMIT ' .$limit);
+			$this->db2->query('SELECT * FROM `tp_pastes` WHERE pastePrivate = 0 ORDER BY pasteDate DESC LIMIT ' . (int) $limit);
 		
 		while($this->db2->fetch()) {
 			$ret[] = $this->getPaste($this->db2->row('pasteID'), true);
