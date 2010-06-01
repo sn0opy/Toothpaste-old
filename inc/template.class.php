@@ -1,15 +1,5 @@
 <?
 
-/**
- * Template Class
- * Very simple template class
- * 
- * @author Sascha Ohms <sasch9r@gmail.com>
- * @link http://somegas.de
- * @copyright Copyright (c) 2009, Sascha Ohms
- * @package snBoardClasses
- */
-
 class template {
 	
 	/**
