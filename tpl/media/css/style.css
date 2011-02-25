@@ -1,0 +1,215 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #333;
+	color: #333;
+	font: 10pt "Courier New";
+}
+
+.codeField {
+	background: #292929;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px dashed #555;
+	margin: 20px;
+	margin-top: 10px;
+}
+
+h1 {
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
+	color: #FFF;
+	letter-spacing: -2px;
+	font-size: 14pt;
+}
+
+h1 em {
+	color: #F5003D;
+	font-size: 20pt;
+	font-style: normal;
+}
+
+h2 {
+	font: 12pt "Lucida Sans Unicode";
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+	margin-left: 20px;
+}
+
+a {
+	color: #F5003D;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.topBar {
+	background: #222;
+	border-bottom: 1px solid #555;
+}
+
+.header {
+	float: left;
+	width: 150px;
+	margin: 6px;
+}
+
+.navi ul {
+	list-style-type: none;
+}
+
+.navi li {
+	float: left;
+}
+
+.navi a.last {
+	border: 0px;
+}
+
+.navi a {
+	font: 10pt "Lucida Sans Unicode";
+	text-decoration: none;
+	color: #FFF;
+	line-height: 40px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right: 1px solid #555;
+	display: block;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.navi a:hover {
+	background: #333;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	color: #666;
+	font: 8pt "Lucida Sans Unicode";
+	text-shadow: 1px 1px 1px #000;
+}
+
+.stylishthing {
+	line-height: 30px;
+	font-size: 12pt;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.codeMeta {
+	color: #666;
+	text-align: right;
+	margin-right: 20px;
+	text-shadow: 1px 1px 1px #000;
+	font: 8pt "Lucida Sans Unicode";
+}
+
+.container {
+	margin-top: 20px;
+}
+
+.aboutpage, .searchpage {
+	color: #FFF;
+	font: 8pt "Lucida Sans Unicode";
+	margin: 20px;
+	background: #292929;
+	padding: 10px;
+	border-radius: 5px;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.add {
+	margin: 20px;
+	padding: 10px;
+	background: #292929;
+	border-radius: 5px;
+}
+
+.add textarea {
+	background: #333;
+	border: 1px dashed #555;
+	height: 300px;
+	color: #FFF;
+	padding: 10px;
+	width: 70%;
+	float: left;
+	margin-right: 10px;
+	min-width: 600px;
+}
+
+.add .meta {
+	float: left;
+	color: #FFF;
+	font: 8pt "Lucida Sans Unicode";
+}
+
+.add select, .add input {
+	border: 1px solid #555;
+	background: #292929;
+	color: #FFF;
+	font: 8pt "Lucida Sans Unicode";
+	width: 150px;
+}
+
+.add .checkbox {
+	width: 16px;
+	height: 16px;
+	border-radius: 5px;
+}
+
+.add select:hover, .add input:hover {
+	background: #555;
+}
+
+.add .meta ul {
+	list-style-type: none;
+}
+
+.add  .meta span {
+	width: 100px;
+	display: block;
+	float: left;
+}
+
+.add .meta li {
+	padding-bottom: 10px;
+}
+
+.error {
+	padding: 5px;
+	margin: 10px 20px 10px 20px;
+	color: #FFF;
+	background: #EB7575;
+	text-shadow: 1px 1px 1px #000;
+	box-shadow: 1px 1px 10px #000;
+	font: 10pt "Lucida Sans Unicode";
+	border-radius: 5px;
+}
+
+.pastebutton {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.searchpage input {
+	border: 1px solid #555;
+	background: #292929;
+	color: #FFF;
+	font: 12pt "Lucida Sans Unicode";
+	width: 150px;
+	padding: 5px;
+}
+
+.searchpage input[type=text] {
+	width: 300px;
+}

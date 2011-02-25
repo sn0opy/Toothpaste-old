@@ -1,0 +1,23 @@
+### 	toothPaste
+### 	By Sascha Ohms
+
+--- INFO
+toothPaste is a lightweight open source pastebin written in PHP. It supports syntax highlighting
+with SyntaxHighlighter by Alex Gorbatchev (http://alexgorbatchev.com/wiki/SyntaxHighlighter), 
+private pastes, search functionality and makes it easy to create your own theme with CSS.
+
+--- INSTALLATION
+3 simple steps:
+
+1. Import install.sql into your SQL server
+2. edit inc/config.php
+3. upload everything to your server except CHANGELOG and README (for security reason)
+
+--- LICENSE
+BY-NC-SA
+http://creativecommons.org/licenses/by-nc-sa/3.0/de/
+
+
+Allowed: Removing the visible copyright in footer and the about page. 
+
+Not allowed: removing the HTML comment copyright in footer.tpl.php
